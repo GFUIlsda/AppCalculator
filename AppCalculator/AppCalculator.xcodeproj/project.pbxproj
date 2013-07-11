@@ -85,9 +85,9 @@
 			children = (
 				D097022D178ECF8700BCFF88 /* AppDelegate.h */,
 				D097022E178ECF8700BCFF88 /* AppDelegate.m */,
-				D0970236178ECF8700BCFF88 /* MainStoryboard.storyboard */,
 				D0970239178ECF8700BCFF88 /* ViewController.h */,
 				D097023A178ECF8700BCFF88 /* ViewController.m */,
+				D0970236178ECF8700BCFF88 /* MainStoryboard.storyboard */,
 				D0970225178ECF8700BCFF88 /* Supporting Files */,
 			);
 			path = AppCalculator;
