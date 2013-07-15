@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+	
+	IBOutlet UILabel *displayLabel;
+	double x, y;
+	NSInteger operation;
+}
+
+//- (IBAction)clear:(id)sender;
+- (IBAction)clearAll:(id)sender;
+
+- (IBAction)digit:(id)sender;
+
+//- (IBAction)operation:(id)sender;
+
+//- (IBAction)inverseSign:(id)sender;
 
 @end

@@ -8,11 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -20,10 +17,30 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clearAll:(id)sender {
+	x = 0;
+	[self calcScreen];
+	
+}
+
+- (IBAction)digit:(id)sender  {
+	x = [sender tag];
+	
+	[self calcScreen];
+}
+
+//- (IBAction)operation:(id)sender {
+//	operation = [sender tag];
+//	
+//	NSLog(@"%i", operation);
+//}
+
+
+- (void)calcScreen {
+	NSString *str = [NSString stringWithFormat: @"%g", x];
+	[displayLabel setText:str];
+	
+	NSLog(@"OK");
 }
 
 @end
