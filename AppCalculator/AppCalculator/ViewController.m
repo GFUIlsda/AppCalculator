@@ -8,32 +8,30 @@
 
 #import "ViewController.h"
 
+enum {
+	bOne = 1,
+	bTwo = 2,
+	bThree = 3,
+	bFour = 4,
+	bFive = 5,
+	bSix = 6,
+	bSeven = 7,
+	bEight = 8,
+	bNine = 9
+};
+
+
 @implementation ViewController
-
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
 - (IBAction)clearAll:(id)sender {
 	x = 0;
 	[self calcScreen];
-	
 }
 
 - (IBAction)digit:(id)sender  {
 	x = [sender tag];
-	
 	[self calcScreen];
 }
-
-//- (IBAction)operation:(id)sender {
-//	operation = [sender tag];
-//	
-//	NSLog(@"%i", operation);
-//}
 
 
 - (void)calcScreen {
