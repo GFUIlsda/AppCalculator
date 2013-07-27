@@ -8,17 +8,17 @@
 
 #import "ViewController.h"
 
-enum {
-	bOne = 1,
-	bTwo = 2,
-	bThree = 3,
-	bFour = 4,
-	bFive = 5,
-	bSix = 6,
-	bSeven = 7,
-	bEight = 8,
-	bNine = 9
-};
+//enum {
+//	bOne = 1,
+//	bTwo = 2,
+//	bThree = 3,
+//	bFour = 4,
+//	bFive = 5,
+//	bSix = 6,
+//	bSeven = 7,
+//	bEight = 8,
+//	bNine = 9
+//};
 
 
 @implementation ViewController
@@ -34,7 +34,8 @@ enum {
 }
 
 
-- (void)calcScreen {
+- (void)calcScreen
+{
 	NSString *str = [NSString stringWithFormat: @"%g", x];
 	[displayLabel setText:str];
 	

@@ -12,7 +12,7 @@
 	
 	IBOutlet UILabel *displayLabel;
 	double x;
-	NSString *figure;
+//	NSString *figure;
 }
 
 - (IBAction)clearAll:(id)sender;
